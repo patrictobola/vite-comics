@@ -21,6 +21,7 @@ h1 {
     color: white;
 }
 
+
 .adv {
     height: 120px;
     display: flex;

@@ -5,6 +5,7 @@ import AppMain from './components/AppMain.vue';
 // Supports weights 300-800
 import '@fontsource-variable/open-sans';
 export default {
+
   components: {
     AppFooter,
     AppHeader,
@@ -35,5 +36,9 @@ a {
 
 li {
   list-style-type: none;
+}
+
+ul {
+  padding: 0;
 }
 </style>
