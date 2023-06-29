@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource-variable/open-sans": "^5.0.4",
     "sass": "^1.63.6",
     "vue": "^3.2.47"
   },
