@@ -39,6 +39,7 @@ export default {
 </template>
 <style lang="scss" scoped>
 @use '../assets/scss/_vars.scss' as *;
+@use '../assets/scss/_mixins.scss' as *;
 
 section {
     background-color: $gray;
@@ -46,13 +47,12 @@ section {
 }
 
 ul {
-    display: flex;
+    @include flex;
 }
 
 div {
-    display: flex;
+    @include flex(flex-start, center);
     height: 100%;
-    align-items: center;
 
 }
 
@@ -72,10 +72,8 @@ button {
 }
 
 .container {
-    display: flex;
+    @include flex(space-between, center);
     height: 100%;
-    align-items: center;
-    justify-content: space-between;
 }
 
 img {

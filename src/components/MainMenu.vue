@@ -51,21 +51,19 @@ export default {
 </template>
 <style lang="scss" scoped>
 @use '../assets/scss/_vars.scss' as *;
+@use '../assets/scss/_mixins.scss' as *;
 
 div {
     height: 150px;
-    display: flex;
-    align-items: center;
+    @include flex(flex-start, center);
     background-color: $blue;
 
 }
 
 ul {
-    display: flex;
-    justify-content: space-between;
+    @include flex(space-between, center);
     width: 100%;
     padding: 0;
-    align-items: center;
 }
 
 li {

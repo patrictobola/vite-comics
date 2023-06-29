@@ -16,18 +16,20 @@ export default {
     <!-- Main menù section  -->
     <MainMenu />
 </template>
+
+
+
 <style lang="scss" scoped>
 @use '../assets/scss/_vars.scss' as *;
+@use '../assets/scss/_mixins.scss' as *;
 
 h1 {
     color: white;
 }
 
-
 .adv {
     height: 120px;
-    display: flex;
-    align-items: center;
+    @include flex(flex-start, center);
     background-color: $dark_gray;
 }
 </style>
