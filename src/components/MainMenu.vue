@@ -5,30 +5,36 @@ export default {
             mainLinks: [
                 {
                     text: 'DIGITAL COMICS',
-                    img: '../assets/img/buy-comics-digital-comics.png',
+                    img: 'buy-comics-digital-comics.png',
                     url: '#'
                 },
                 {
                     text: 'DC MERCHANDISE',
-                    img: '../assets/img/buy-comics-merchandise.png',
+                    img: 'buy-comics-merchandise.png',
                     url: '#'
                 },
                 {
                     text: 'SUBSCRIPTION',
-                    img: '../assets/img/buy-comics-subscriptions.png',
+                    img: 'buy-comics-subscriptions.png',
                     url: '#'
                 },
                 {
                     text: 'COMIC SHOP LOCATOR',
-                    img: '../assets/img/buy-comics-shop-locator.png',
+                    img: 'buy-comics-shop-locator.png',
                     url: '#'
                 },
                 {
                     text: 'DC POWER VISA',
-                    img: '@/assets/img/buy-dc-power-visa.svg',
+                    img: 'buy-dc-power-visa.svg',
                     url: '#'
                 },
             ]
+        }
+    },
+    methods: {
+        getImagePath(image) {
+            const url = new URL(`../assets/img/${image}`, import.meta.url)
+            return url.href
         }
     }
 }
@@ -37,8 +43,8 @@ export default {
     <div>
         <div class="container">
             <ul>
-                <li v-for="link in mainLinks"><a :href="link.url"><img :src="link.img" alt="">{{
-                    link.text }}</a></li>
+                <li v-for="link in mainLinks"><a :href="link.url"><img :src="getImagePath(link.img)" alt="">{{ link.text
+                }}</a></li>
             </ul>
         </div>
     </div>
@@ -67,9 +73,11 @@ li {
 a {
     color: white;
     display: flex;
+    line-height: 60px;
 }
 
 img {
     height: 60px;
+    padding-right: 10px;
 }
 </style>
