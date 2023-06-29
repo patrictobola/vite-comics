@@ -26,6 +26,6 @@ h1 {
     height: 120px;
     display: flex;
     align-items: center;
-    background-color: slategray;
+    background-color: #1c1c1c;
 }
 </style>

@@ -1,6 +1,9 @@
 <script>
+import FooterLinks from './FooterLinks.vue';
 export default {
-
+    components: {
+        FooterLinks,
+    }
 }
 </script>
 <template>
@@ -53,6 +56,7 @@ export default {
             </div>
         </div>
     </div>
+    <FooterLinks />
 </template>
 <style scoped>
 #background {
@@ -72,7 +76,8 @@ h2 {
 }
 
 a {
-    color: whitesmoke;
+    color: #7c7c7c;
+    font-size: 0.8rem;
 }
 
 .list-item {
