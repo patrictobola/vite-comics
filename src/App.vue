@@ -28,4 +28,12 @@ body {
   font-family: 'Open Sans Variable', sans-serif;
   background-color: #000;
 }
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
 </style>

@@ -103,7 +103,7 @@ ul {
 }
 
 li {
-    list-style-type: none;
+
     padding: 0 10px;
     font-weight: 500;
     text-transform: uppercase;
@@ -113,7 +113,6 @@ li {
 }
 
 a {
-    text-decoration: none;
     color: black;
     height: 98%;
     display: flex;
