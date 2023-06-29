@@ -22,9 +22,11 @@ export default {
         </div>
     </section>
 </template>
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/scss/_vars.scss' as *;
+
 section {
-    background-color: #303030;
+    background-color: $gray;
     height: 120px;
 }
 
@@ -40,14 +42,14 @@ div {
 }
 
 span {
-    color: blue;
+    color: $blue;
     margin-right: 20px;
     font-weight: 600;
 }
 
 button {
     background-color: inherit;
-    border: 2px solid blue;
+    border: 2px solid $blue;
     padding: 10px 20px;
     color: white;
     font-weight: 600;

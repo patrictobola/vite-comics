@@ -49,12 +49,14 @@ export default {
         </div>
     </div>
 </template>
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/scss/_vars.scss' as *;
+
 div {
     height: 150px;
     display: flex;
     align-items: center;
-    background-color: #0282f9;
+    background-color: $blue;
 
 }
 

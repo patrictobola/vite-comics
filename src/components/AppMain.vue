@@ -16,7 +16,9 @@ export default {
     <!-- Main menù section  -->
     <MainMenu />
 </template>
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/scss/_vars.scss' as *;
+
 h1 {
     color: white;
 }
@@ -26,6 +28,6 @@ h1 {
     height: 120px;
     display: flex;
     align-items: center;
-    background-color: #1c1c1c;
+    background-color: $dark_gray;
 }
 </style>

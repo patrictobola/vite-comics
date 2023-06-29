@@ -19,26 +19,6 @@ export default {
   <AppFooter />
 </template>
 
-<style>
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-body {
-  font-family: 'Open Sans Variable', sans-serif;
-  background-color: #000;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-}
-
-ul {
-  padding: 0;
-}
+<style lang="scss">
+@use './assets/scss/style.scss';
 </style>
