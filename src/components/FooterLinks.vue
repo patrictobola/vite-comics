@@ -12,11 +12,26 @@ export default {
             <div>
                 <span>FOLLOW US</span>
                 <ul>
-                    <li><img src="../assets/img/footer-facebook.png" alt=""></li>
-                    <li><img src="../assets/img/footer-twitter.png" alt=""></li>
-                    <li><img src="../assets/img/footer-youtube.png" alt=""></li>
-                    <li><img src="../assets/img/footer-pinterest.png" alt=""></li>
-                    <li><img src="../assets/img/footer-periscope.png" alt=""></li>
+                    <li><a href="">
+                            <img src="../assets/img/footer-twitter.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="">
+                            <img src="../assets/img/footer-facebook.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="">
+                            <img src="../assets/img/footer-youtube.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="">
+                            <img src="../assets/img/footer-pinterest.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="">
+                            <img src="../assets/img/footer-periscope.png" alt="">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -61,5 +76,9 @@ button {
     height: 100%;
     align-items: center;
     justify-content: space-between;
+}
+
+img {
+    margin-right: 10px;
 }
 </style>
