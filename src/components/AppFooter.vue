@@ -58,7 +58,9 @@ export default {
     </div>
     <FooterLinks />
 </template>
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/scss/_vars.scss' as *;
+
 #background {
     background: no-repeat 80% 50% /500px url(../assets/img/dc-logo-bg.png), no-repeat center / 2000px url(../assets/img/footer-bg.jpg);
     /* height: 500px; */
@@ -78,6 +80,10 @@ h2 {
 a {
     color: #7c7c7c;
     font-size: 0.8rem;
+
+    &:hover {
+        color: $blue;
+    }
 }
 
 .list-item {

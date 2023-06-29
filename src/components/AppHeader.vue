@@ -64,7 +64,7 @@ export default {
         <div id="navbar" class="container">
 
             <div class="logo">
-                <img src="../assets/img/dc-logo.png" alt="">
+                <a href=""><img src="../assets/img/dc-logo.png" alt=""></a>
             </div>
             <div class="links">
                 <ul>
@@ -77,6 +77,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/_vars.scss' as *;
+
 nav {
     height: 100px;
     background-color: white;
@@ -119,8 +121,8 @@ a {
     align-items: center;
 
     &:hover {
-        color: lightblue;
-        border-bottom: 2px solid lightblue;
+        color: $blue;
+        border-bottom: 2px solid $blue;
     }
 }
 

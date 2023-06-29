@@ -69,11 +69,16 @@ button {
     color: white;
     font-weight: 600;
     cursor: pointer;
+
+    &:hover {
+        color: $blue;
+    }
 }
 
 .container {
     @include flex(space-between, center);
     height: 100%;
+
 }
 
 img {

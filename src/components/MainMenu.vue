@@ -74,6 +74,11 @@ a {
     color: white;
     display: flex;
     line-height: 60px;
+    padding: 45px 10px;
+
+    &:hover {
+        background-color: rgba($color: #000000, $alpha: 0.1);
+    }
 }
 
 img {
