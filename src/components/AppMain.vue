@@ -1,6 +1,9 @@
 <script>
 import MainMenu from './MainMenu.vue';
 export default {
+    props: {
+        menuLinks: Array
+    },
     components: {
         MainMenu
     }
@@ -14,7 +17,7 @@ export default {
         </div>
     </div>
     <!-- Main menù section  -->
-    <MainMenu />
+    <MainMenu :menuLinks="menuLinks" />
 </template>
 
 
