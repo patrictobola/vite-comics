@@ -15,15 +15,28 @@ export default {
     <div class="container">
         <div class="card-container">
             <ComicbookCard :books="books" />
+            <button>LOAD MORE</button>
         </div>
     </div>
 </template>
 
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../../assets/scss/vars' as *;
+
 .card-container {
-    margin: 50px -10px;
+    margin: 50px -10px 0 -10px;
     display: flex;
     flex-wrap: wrap;
+}
+
+button {
+    background-color: $blue;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 50px;
+    margin: 20px auto;
 }
 </style>
