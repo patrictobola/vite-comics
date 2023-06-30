@@ -11,9 +11,11 @@ export default {
 </script>
 <template>
     <!-- Advertising section  -->
-    <div class="adv">
+    <div class="jumbotron">
         <div class="container">
-            <h1>Content goes here</h1>
+            <div class="tag">
+                <span>Current series</span>
+            </div>
         </div>
     </div>
     <!-- Main menù section  -->
@@ -26,13 +28,29 @@ export default {
 @use '../assets/scss/_vars.scss' as *;
 @use '../assets/scss/_mixins.scss' as *;
 
-h1 {
+span {
     color: white;
+    font-size: 2rem;
+    margin: 0;
+    background-color: $blue;
+    padding: 5px 10px;
 }
 
-.adv {
-    height: 120px;
+.tag {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: translate(0, 50%);
+}
+
+.container {
+    height: 100%;
+    position: relative;
+}
+
+.jumbotron {
+    height: 400px;
     @include flex(flex-start, center);
-    background-color: $dark_gray;
+    background: no-repeat url(../assets/img/jumbotron.jpg);
 }
 </style>
