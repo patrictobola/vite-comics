@@ -5,7 +5,7 @@ export default {
     },
     methods: {
         getImagePath(image) {
-            const url = new URL(`../assets/img/${image}`, import.meta.url)
+            const url = new URL(`../../assets/img/${image}`, import.meta.url)
             return url.href
         }
     }
@@ -22,8 +22,8 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
-@use '../assets/scss/_vars.scss' as *;
-@use '../assets/scss/_mixins.scss' as *;
+@use '../../assets/scss/_vars.scss' as *;
+@use '../../assets/scss/_mixins.scss' as *;
 
 div {
     height: 150px;

@@ -1,11 +1,13 @@
 <script>
-import MainMenu from './MainMenu.vue';
+import MainMenu from './mainsection/MainMenu.vue';
+import MainComics from './mainsection/MainComics.vue';
 export default {
     props: {
         links: Array
     },
     components: {
-        MainMenu
+        MainMenu,
+        MainComics,
     }
 }
 </script>
@@ -18,6 +20,9 @@ export default {
             </div>
         </div>
     </div>
+    <!-- ComicBooks section  -->
+    <MainComics />
+
     <!-- Main menù section  -->
     <MainMenu :links="links" />
 </template>

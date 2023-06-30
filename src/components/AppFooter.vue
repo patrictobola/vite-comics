@@ -63,7 +63,6 @@ export default {
 
 #background {
     background: no-repeat 80% 50% /500px url(../assets/img/dc-logo-bg.png), no-repeat center / 2000px url(../assets/img/footer-bg.jpg);
-    /* height: 500px; */
     background-repeat: no-repeat;
 }
 
