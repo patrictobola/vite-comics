@@ -11,6 +11,7 @@ export default {
         <div class="image">
             <img :src="book.thumb" :alt="book.series">
         </div>
+        <div class="text">Price: {{ book.price }}</div>
         <div class="text">{{ book.series }}</div>
     </div>
 </template>
