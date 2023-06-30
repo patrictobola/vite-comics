@@ -28,7 +28,7 @@ export default {
 </script>
 <template>
   <AppHeader :links="NavbarLinks" />
-  <AppMain :links="MenuLinks" />
+  <AppMain :links="MenuLinks" :books="ComicBooks" />
   <AppFooter />
 </template>
 
