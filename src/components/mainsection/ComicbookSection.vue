@@ -13,8 +13,14 @@ export default {
 
 <template>
     <div class="container">
+        <!-- Tag  -->
+        <div class="tag">
+            <span>Current series</span>
+        </div>
         <div class="card-container">
-            <ComicbookCard :books="books" />
+            <div v-for="book in books" class="card">
+                <ComicbookCard :books="book" />
+            </div>
             <button>LOAD MORE</button>
         </div>
     </div>
@@ -24,8 +30,38 @@ export default {
 <style lang="scss" scoped>
 @use '../../assets/scss/vars' as *;
 
+.container {
+    position: relative;
+}
+
+span {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    background-color: $blue;
+    padding: 5px 10px;
+}
+
+.tag {
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    transform: translate(0, -50%);
+}
+
+.card {
+    width: calc(100% / 6 - 20px);
+    padding: 10px;
+
+}
+
 .card-container {
     margin: 50px -10px 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
     display: flex;
     flex-wrap: wrap;
 }

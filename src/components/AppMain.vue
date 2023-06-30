@@ -16,9 +16,7 @@ export default {
     <!-- Advertising section  -->
     <div class="jumbotron">
         <div class="container">
-            <div class="tag">
-                <span>Current series</span>
-            </div>
+
         </div>
     </div>
     <!-- ComicBooks section  -->
@@ -34,20 +32,7 @@ export default {
 @use '../assets/scss/_vars.scss' as *;
 @use '../assets/scss/_mixins.scss' as *;
 
-span {
-    color: white;
-    font-size: 2rem;
-    margin: 0;
-    background-color: $blue;
-    padding: 5px 10px;
-}
 
-.tag {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    transform: translate(0, 50%);
-}
 
 .container {
     height: 100%;
