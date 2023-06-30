@@ -38,5 +38,11 @@ button {
     font-size: 1.2rem;
     padding: 10px 50px;
     margin: 20px auto;
+
+
+    &:hover {
+        background-color: #359cfd;
+        cursor: pointer;
+    }
 }
 </style>
