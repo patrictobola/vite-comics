@@ -1,6 +1,18 @@
 <script>
+// Importo data con le  icone 
+import footerIcons from '../assets/data/_footerIcons';
 export default {
-
+    data() {
+        return {
+            footerIcons
+        }
+    },
+    methods: {
+        getImagePath(image) {
+            const url = new URL(`../assets/img/${image}`, import.meta.url)
+            return url.href
+        }
+    }
 }
 </script>
 <template>
@@ -12,25 +24,8 @@ export default {
             <div>
                 <span>FOLLOW US</span>
                 <ul>
-                    <li><a href="">
-                            <img src="../assets/img/footer-twitter.png" alt="">
-                        </a>
-                    </li>
-                    <li><a href="">
-                            <img src="../assets/img/footer-facebook.png" alt="">
-                        </a>
-                    </li>
-                    <li><a href="">
-                            <img src="../assets/img/footer-youtube.png" alt="">
-                        </a>
-                    </li>
-                    <li><a href="">
-                            <img src="../assets/img/footer-pinterest.png" alt="">
-                        </a>
-                    </li>
-                    <li><a href="">
-                            <img src="../assets/img/footer-periscope.png" alt="">
-                        </a>
+                    <li v-for="icon in footerIcons">
+                        <a href=""><img :src="getImagePath(icon.img)" alt=""></a>
                     </li>
                 </ul>
             </div>
