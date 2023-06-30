@@ -6,12 +6,11 @@ import AppMain from './components/AppMain.vue';
 // Importo il font 
 import '@fontsource-variable/open-sans';
 // Importo i data 
-import MenuLinks from './assets/data/MenuLinks.js';
+import MenuLinks from './assets/data/_menuLinks';
+import NavbarLinks from './assets/data/_NavbarLinks';
+import ComicBooks from './assets/data/_ComicBooks';
 
 export default {
-  // props: {
-  //   MenuLinks
-  // },
   components: {
     AppFooter,
     AppHeader,
@@ -19,67 +18,17 @@ export default {
   },
   data() {
     return {
-      navbarLinks: [
-        {
-          text: 'Characters',
-          url: '#',
-          current: false,
-        },
-        {
-          text: 'Comics',
-          url: '#',
-          current: true,
-        },
-        {
-          text: 'Movies',
-          url: '#',
-          current: false,
-        },
-        {
-          text: 'TV',
-          url: '#',
-          current: false,
-        },
-        {
-          text: 'Games',
-          url: '#',
-          current: false,
-        },
-        {
-          text: 'Collectibles',
-          url: '#',
-          current: false,
-        },
-        {
-          text: 'Videos',
-          url: '#',
-          current: false,
-        },
-        {
-          text: 'Fans',
-          url: '#',
-          current: false,
-        },
-        {
-          text: 'News',
-          url: '#',
-          current: false,
-        },
-        {
-          text: 'Shop',
-          url: '#',
-          current: false,
-        },
-      ],
-      MenuLinks
+      MenuLinks,
+      NavbarLinks,
+      ComicBooks
     }
 
   }
 }
 </script>
 <template>
-  <AppHeader :links="navbarLinks" />
-  <AppMain :menuLinks="MenuLinks" />
+  <AppHeader :links="NavbarLinks" />
+  <AppMain :links="MenuLinks" />
   <AppFooter />
 </template>
 

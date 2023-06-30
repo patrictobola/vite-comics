@@ -1,7 +1,7 @@
 <script>
 export default {
     props: {
-        menuLinks: Array
+        links: Array
     },
     methods: {
         getImagePath(image) {
@@ -15,7 +15,7 @@ export default {
     <div>
         <div class="container">
             <ul>
-                <li v-for="link in menuLinks"><a :href="link.url"><img :src="getImagePath(link.img)" alt="">{{ link.text
+                <li v-for="link in links"><a :href="link.url"><img :src="getImagePath(link.img)" alt="">{{ link.text
                 }}</a></li>
             </ul>
         </div>

@@ -2,7 +2,7 @@
 import MainMenu from './MainMenu.vue';
 export default {
     props: {
-        menuLinks: Array
+        links: Array
     },
     components: {
         MainMenu
@@ -17,7 +17,7 @@ export default {
         </div>
     </div>
     <!-- Main menù section  -->
-    <MainMenu :menuLinks="menuLinks" />
+    <MainMenu :links="links" />
 </template>
 
 
