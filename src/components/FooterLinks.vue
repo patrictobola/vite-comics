@@ -1,10 +1,10 @@
 <script>
 // Importo data con le  icone 
-import footerIcons from '../assets/data/_footerIcons';
+import socialIcons from '../assets/data/_socialIcons';
 export default {
     data() {
         return {
-            footerIcons
+            socialIcons
         }
     },
     methods: {
@@ -24,8 +24,10 @@ export default {
             <div>
                 <span>FOLLOW US</span>
                 <ul>
-                    <li v-for="icon in footerIcons">
-                        <a href=""><img :src="getImagePath(icon.img)" alt=""></a>
+                    <li v-for="icon in socialIcons">
+                        <a :href="icon.url" target=”_blank”>
+                            <img :src="getImagePath(icon.img)" :alt="icon.title" :title="icon.title">
+                        </a>
                     </li>
                 </ul>
             </div>

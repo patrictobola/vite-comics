@@ -2,26 +2,26 @@ export default [
     {
         title: 'Twitter',
         img: 'footer-twitter.png',
-        url: '#'
+        url: 'https://www.twitter.com'
     },
     {
         title: 'Facebook',
         img: 'footer-facebook.png',
-        url: '#'
+        url: 'https://www.facebook.com'
     },
     {
         title: 'YouTube',
         img: 'footer-youtube.png',
-        url: '#'
+        url: 'https://www.youtube.com'
     },
     {
         title: 'Pinterest',
         img: 'footer-pinterest.png',
-        url: '#'
+        url: 'https://www.pinterest.com'
     },
     {
         title: 'Periscope',
         img: 'footer-periscope.png',
-        url: '#'
+        url: 'https://www.pscp.tv/'
     },
 ]
