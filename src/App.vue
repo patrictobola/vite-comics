@@ -6,7 +6,7 @@ import AppMain from './components/AppMain.vue';
 // Importo il font 
 import '@fontsource-variable/open-sans';
 // Importo i data 
-// import MenuLinks from './assets/data/MenuLinks.js';
+import MenuLinks from './assets/data/MenuLinks.js';
 
 export default {
   // props: {
@@ -19,33 +19,6 @@ export default {
   },
   data() {
     return {
-      menuLinks: [
-        {
-          text: 'DIGITAL COMICS',
-          img: 'buy-comics-digital-comics.png',
-          url: '#'
-        },
-        {
-          text: 'DC MERCHANDISE',
-          img: 'buy-comics-merchandise.png',
-          url: '#'
-        },
-        {
-          text: 'SUBSCRIPTION',
-          img: 'buy-comics-subscriptions.png',
-          url: '#'
-        },
-        {
-          text: 'COMIC SHOP LOCATOR',
-          img: 'buy-comics-shop-locator.png',
-          url: '#'
-        },
-        {
-          text: 'DC POWER VISA',
-          img: 'buy-dc-power-visa.svg',
-          url: '#'
-        },
-      ],
       navbarLinks: [
         {
           text: 'Characters',
@@ -98,6 +71,7 @@ export default {
           current: false,
         },
       ],
+      MenuLinks
     }
 
   }
@@ -105,7 +79,7 @@ export default {
 </script>
 <template>
   <AppHeader :links="navbarLinks" />
-  <AppMain :menuLinks="menuLinks" />
+  <AppMain :menuLinks="MenuLinks" />
   <AppFooter />
 </template>
 
